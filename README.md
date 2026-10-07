@@ -29,6 +29,8 @@ El proyecto fue desarrollado utilizando las siguientes tecnologías y herramient
 - **pytest-html**: plugin utilizado para generar un reporte HTML con los resultados de las pruebas.
 - **Firefox**: navegador donde se ejecutan las pruebas.
 - **Visual Studio Code**: entorno de desarrollo utilizado para crear y ejecutar el proyecto.
+- **Git**: sistema de control de versiones utilizado para registrar cambios.
+- **Github**: plataforma web utilizada para alojar el proyecto.
 
 ## Estructura del proyecto
 
