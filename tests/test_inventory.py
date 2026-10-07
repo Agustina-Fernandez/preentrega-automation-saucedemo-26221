@@ -98,7 +98,7 @@ def test_visualizacion_elementos():
         filtro = driver.find_element(By.CLASS_NAME, "product_sort_container")
         assert filtro.is_displayed()
 
-        icono_carrito = driver.find_element(By.ID, "shopping_cart_container")
+        icono_carrito = driver.find_element(By.CLASS_NAME, "shopping_cart_link")
         assert icono_carrito.is_displayed()
 
     finally:
