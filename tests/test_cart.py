@@ -109,13 +109,12 @@ def test_verificar_item_carrito():
     
         # Hacemos el evento click en ese botón de agregar al carrito
         add_cart.click()
-
-        # Verificamos que nos lleve a la URL del carrito
-        assert "/cart.html" in driver.current_url
     
         # Verificamos que el producto este en el carrito
         carrito = driver.find_element(By.CLASS_NAME, "shopping_cart_link")
         carrito.click()
+
+        assert "/cart.html" in driver.current_url # Verificamos que nos lleve a la URL del carrito
 
         producto = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "cart_item")))
         print("El producto esta visible en el carrito")
